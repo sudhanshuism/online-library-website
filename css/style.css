@@ -1,0 +1,188 @@
+.navbar{
+  height: 100px !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+.nav-link{
+  text-align: center !important;
+}
+.footer{
+  background: #626262;
+}
+body{
+  background: #F0A379 !important;
+}
+
+.hero{
+  background-color: rgb(255, 233, 12 ,0.5);
+  padding-top: 100px;
+}
+.login-form{
+  background: transparent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.login-form-middle{
+  background-color: white;
+  padding:10px;
+}
+.login-form-inner{
+  border:1px solid black;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.login-form-inner h1{
+  padding-bottom:15px;
+}
+
+.heading{
+  text-align: center;
+
+  padding-top: 100px;
+}
+.heading h1 span{
+  color: white;
+  font-size: 60px;
+}
+.heading h1 b{
+  color: #235EF1;
+  font-size: 80px;
+}
+.footer-col{
+  text-align: center;
+  padding-top: 15px;
+}
+.footer-heading{
+  text-align: center;
+}
+.footer-col .nav-link{
+  color:white !important;
+}
+.library{
+  padding-top: 100px;
+  background: white;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+.library-middle{
+
+}
+.category-row{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.category-row .col-md-2{
+
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90% !important;
+
+}
+
+.category-col{
+  border:1px solid black;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.book-rack{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 5px grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bg-1{
+  background-color: #CFCFCF;
+}
+.bg-2{
+  background-color: #F1EBB4;
+}
+.book{
+  padding:10px;
+  text-align: center;
+}
+.see-more{
+  color:maroon;
+  background-color: #7F7F7F;
+  width: 100%;
+  margin-top: 50px;
+}
+.see-more a:first-child{
+  float: right;
+
+}
+
+.authors{
+  padding-top: 20px;
+  background: white;
+  margin-top: 170px;
+  text-align: center;
+}
+.authors table{
+  text-align: center;
+}
+.author-img{
+
+}
+.author-name{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.subjects-outer{
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.subjects{
+  background: white;
+  margin-bottom: 100px;
+}
+.single-book{
+  margin-top: 100px;
+  background: skyblue;
+
+}
+.page-heading{
+
+
+  padding-top: 15 px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+
+}
+.single-book-middle{
+  background: white;
+  top:40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.borrow-area-outer{
+  padding:20px;
+}
+.borrow-area{
+  border:1px solid grey;
+  text-align: center;
+}
+.navbar-2{
+  padding-top: 105px;
+  background-color: grey;
+  padding-bottom: 5px;
+}
+.welcome{
+  text-align: center;
+  margin-left: 10px;
+}
