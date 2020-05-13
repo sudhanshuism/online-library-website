@@ -1,5 +1,4 @@
-<?php include("head.php"); ?>
-<?php include("nav-2.php");?>
+<?php include("nav-3.php"); ?>
   <div class="container single-book">
     <div class="container page-heading"><p><b>1 Edition</b> of this this Book Found</p></div>
   </div>
@@ -66,11 +65,52 @@
 
       <div class="col-md-3 borrow-area-outer">
         <div class="container borrow-area">
-          <button class="btn btn-primary btn-lg">Borrow</button>
+          <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Borrow Now</button>
         </div>
       </div>
 
 
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Book Issue | Book : Simon Lizarus </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <p>Date: <span id="datee"><span></p>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://covers.openlibrary.org/b/id/872638-M.jpg" height="300px" width="200px"/>
+              </div>
+              <div class="col-md-6">
+                <h1>Summary</h1>
+                <h4>Simon Lizarus</h4>
+                <p>Gram and my mother, Nancy, want me to come home for
+                  my sister's 16th birthday party when the spring semester ends, which is in about two and a half months.
+                </p>
+
+              </div>
+          </div>
+
+          <script>
+          var d = new Date('2019-06-11');
+          document.getElementById("datee").innerHTML = d;
+          </script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="/HCI%20Project/dashboard.php"><button type="button" class="btn btn-primary">Confirm</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <?php include("footer.php"); ?>

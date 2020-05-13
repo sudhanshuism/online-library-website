@@ -1,5 +1,4 @@
-<?php include("head.php"); ?>
-<?php include("nav-2.php");?>
+<?php include("nav-3.php");?>
 <?php $authors = array(
   array("https://miro.medium.com/max/1000/1*03EKvinrjmN3Ru2HZkyA3A.jpeg","Agatha Christie"," If you are properly modest, you will never write at all, so there has to be one delicious moment when you have thought of something, know just how you are going to write it, rush for a pencil, and start in exercise book buoyed up with exaltation."),
   array("https://miro.medium.com/max/666/1*TchRh8gq09aTccUAL8zylg.png","Albert Camus","In the depth of winter, I finally learned that within me there lay an invincible summer."),

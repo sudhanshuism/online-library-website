@@ -1,5 +1,4 @@
-<?php include("head.php"); ?>
-<?php include("nav-2.php");?>
+<?php include("nav-3.php");?>
 
 <?php $authors = array(
   "Art"=>array('Architecture','Art Instruction','Art History','Dance,Design','Fashion','Film','Graphic Design','Music','Music Theory','Painting','Photography'),

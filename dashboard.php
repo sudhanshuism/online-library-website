@@ -1,5 +1,5 @@
-<?php include("head.php"); ?>
-<?php include("nav-2.php");?>
+<?php include("nav-3.php"); ?>
+
 <div id="top" class="container-fluid library">
   <div class="container library-middle">
     <div class="library-category">
@@ -7,7 +7,7 @@
       <div class="row category-row">
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="fa fa-superpowers" aria-hidden="true"></span></h1>
+            <img class="icon" src="images/photo.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#fiction"> Fiction</a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
@@ -15,7 +15,7 @@
 
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="fa fa-thermometer-1  " aria-hidden="true"></span></h1>
+            <img class="icon" src="images/multimedia.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#science"> Science </a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
@@ -23,7 +23,7 @@
 
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="" aria-hidden="true"></span></h1>
+            <img class="icon" src="images/business.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#biography"> Biography </a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
@@ -31,7 +31,7 @@
 
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="fa fa-venus-double  " aria-hidden="true"></span></h1>
+            <img class="icon" src="images/marriage.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#romance"> Romance </a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
@@ -39,19 +39,46 @@
 
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="fa fa-superpowers  " aria-hidden="true"></span></h1>
+            <img class="icon" src="images/people.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#recipes"> Recipes </a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
         </div>
         <div class="col-md-2">
           <div class="container category-col">
-            <h1><span class="fa fa-address-card  " aria-hidden="true"></span></h1>
+            <img class="icon" src="images/cabinet.png"></img>
             <p><b><a href="/HCI%20Project/dashboard.php#fantasy"> Fantasy  </a></b></p>
             <p class="no-of-books"><i>2000 Books</i></p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="fiction" class="container book-rack">
+    <h4 style="color:#FF5733 ;">Recommended Books for you</h4>
+    <div class="row bg-1">
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/9272705-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/6976035-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/7319376-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/47422-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+
     </div>
   </div>
 
@@ -62,6 +89,7 @@
           <img src="https://covers.openlibrary.org/w/id/8267078-M.jpg" height="180px" width="120px">
           <h5>Book Name </h5>
           <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
+
         </div>
         <div class="col-md-3 book">
           <img src="https://covers.openlibrary.org/w/id/9272705-M.jpg" height="180px" width="120px">
@@ -79,8 +107,8 @@
           <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
         </div>
         <div class="see-more">
-          <a href="/HCI%20Project/single-book.php" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-          <a href="#top" class="btn btn-warning">Top &#x2191; </a>        </div>
+          <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+          <a href="#top" class="btn btn-danger">Top &#x2191; </a>        </div>
     </div>
   </div>
 
@@ -109,8 +137,8 @@
           <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
         </div>
         <div class="see-more">
-          <a href="/HCI%20Project/single-book.php" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-          <a href="#top" class="btn btn-warning">Top &#x2191; </a>      </div>
+          <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+          <a href="#top" class="btn btn-danger">Top &#x2191; </a>      </div>
     </div>
   </div>
 <!-- Rack 3 -->
@@ -138,8 +166,8 @@
         <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
       </div>
       <div class="see-more">
-        <a href="/HCI%20Project/single-book.php" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-        <a href="#top" class="btn btn-warning">Top &#x2191; </a>    </div>
+        <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+        <a href="#top" class="btn btn-danger">Top &#x2191; </a>    </div>
   </div>
 </div>
 
@@ -167,8 +195,8 @@
         <h5>Book Name </h5>
         <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
       </div>
-      <div class="see-more"><a href="#" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-      <a href="#top" class="btn btn-warning">Top &#x2191; </a>    </div>
+      <div class="see-more"><a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+      <a href="#top" class="btn btn-danger">Top &#x2191; </a>    </div>
   </div>
 </div>
 
@@ -197,8 +225,8 @@
         <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
       </div>
       <div class="see-more">
-        <a href="#" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-        <a href="#top" class="btn btn-warning">Top &#x2191; </a>
+        <a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+        <a href="#top" class="btn btn-danger">Top &#x2191; </a>
     </div>
   </div>
 </div>
@@ -228,8 +256,8 @@
         <a href="/HCI%20Project/single-book.php" class="btn btn-md btn-primary">Borrow</a>
       </div>
       <div class="see-more">
-        <a href="#" class="btn btn-danger" onclick="window.alert('No More book available in this category')">See More</a>
-        <a href="#top" class="btn btn-warning">Top &#x2191; </a>
+        <a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+        <a href="#top" class="btn btn-danger">Top &#x2191; </a>
     </div>
   </div>
 

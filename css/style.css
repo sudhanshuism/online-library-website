@@ -41,11 +41,16 @@ body{
 .login-form-inner h1{
   padding-bottom:15px;
 }
-
+.para{
+  padding:0px !important;
+}
+.para1{
+  padding-top: 5px !important;
+}
 .heading{
   text-align: center;
 
-  padding-top: 100px;
+  padding-top: 170px;
 }
 .heading h1 span{
   color: white;
@@ -113,7 +118,7 @@ body{
 }
 .see-more{
   color:maroon;
-  background-color: #7F7F7F;
+  background-color: grey;
   width: 100%;
   margin-top: 50px;
 }
@@ -121,7 +126,15 @@ body{
   float: right;
 
 }
-
+.btn-warning{
+  border-radius: 0px !important;
+}
+.btn-danger{
+  border-radius: 0px !important;
+}
+.recommended{
+  background: green;
+}
 .authors{
   padding-top: 20px;
   background: white;
@@ -174,7 +187,7 @@ body{
   padding:20px;
 }
 .borrow-area{
-  border:1px solid grey;
+
   text-align: center;
 }
 .navbar-2{
@@ -185,4 +198,17 @@ body{
 .welcome{
   text-align: center;
   margin-left: 10px;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+}
+.reading-log{
+  margin-top:120px;
+
+}
+
+.reading-log-heading{
+  text-align: center;
 }
