@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <!-- Included Stylesheets -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Javascript Libraries -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  <!--  <script src="https://use.fontawesome.com/6036af21bc.js"></script>-->
+
+  </head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/mitaoe.png">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./dashboard.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Browse
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./authors.html">Author</a>
+          <a class="dropdown-item" href="./dashboard.html#category">Category</a>
+
+          <a class="dropdown-item" href="./subjects.html">Subjects</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My Books
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./reading-log.html">My Reading Logs</a>
+          <a class="dropdown-item" href="./reading-list.html">My List</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Purchased Books</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:red" href="./" onclick="window.confirm('Are You Sure you want to Logout?')">Logout</a>
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+
+    </form>
+
+  </div>
+</nav>
+
+
+<div class="authors container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Image  </th>
+        <th>Title &#128366; </th>
+        <th> Details &#9775; </th>
+      </tr>
+    </thead>
+        <tr>
+          <td>1</td>
+          <td class="author-img"><img src="https://covers.openlibrary.org/b/id/872638-M.jpg" height="150px" width="100px"></td>
+          <td class="author-name">Simon Lazarus</td>
+          <td class="author-desc">Simon’s articles have appeared in the Atlantic, the Washington Post, The American Prospect, Roll Call, Slate, The Hill, Newsweek/ Daily Beast, Politico, The New Republic, the Huffington Post, as well as law reviews. Simon has written frequently for the American Constitution Society’s ACS Blog and published several ACS issue briefs, including “Mandatory Health Insurance: Is It Constitutional?”, which was released during the Senate health care reform debate in December 2009, and “The Health Reform Lawsuits: Unraveling a Century of Constitutional Law and the Fabric of Modern Government,” published in February 2011.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="author-img"><img src="https://covers.openlibrary.org/w/id/9272705-M.jpg" height="150px" width="100px"></td>
+          <td class="author-name">To Killing a Mockingbird</td>
+          <td class="author-desc">To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize. The plot and characters are loosely based on Lee's observations of her family, her neighbors and an event that occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten.</td>
+        </tr>
+
+    </table>
+
+</div>
+<div class="container-fluid">
+    <div id="footer" class="row footer">
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Policies </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Return Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Penalty</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Open Library </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Discover </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Author</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subjects</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Contact </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Email:lib@gmail.com</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Phone: 7276381542</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,187 @@
+<!-- <?html include("nav-3.html");?> -->
+<html>
+  <head>
+    <!-- Included Stylesheets -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Javascript Libraries -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  <!--  <script src="https://use.fontawesome.com/6036af21bc.js"></script>-->
+
+  </head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/mitaoe.png">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./dashboard.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Browse
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./authors.html">Author</a>
+          <a class="dropdown-item" href="./dashboard.html#category">Category</a>
+
+          <a class="dropdown-item" href="./subjects.html">Subjects</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My Books
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./reading-log.html">My Reading Logs</a>
+          <a class="dropdown-item" href="./reading-list.html">My List</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Purchased Books</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:red" href="./" onclick="window.confirm('Are You Sure you want to Logout?')">Logout</a>
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+
+    </form>
+
+  </div>
+</nav>
+
+
+<div class="authors container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>Image </th>
+        <th>Name </th>
+        <th> Quote </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="author-img"><img src="https://miro.medium.com/max/1000/1*03EKvinrjmN3Ru2HZkyA3A.jpeg" height="150px" width="100px"></td>
+        <td class="author-name">Agatha Christie</td>
+        <td class="author-desc">If you are properly modest, you will never write at all, so there has to be one delicious moment when you have thought of something, know just how you are going to write it, rush for a pencil, and start in exercise book buoyed up with exaltation.</td>
+      </tr>
+      <tr>
+        <td class="author-img"><img src="https://miro.medium.com/max/666/1*TchRh8gq09aTccUAL8zylg.png" height="150px" width="100px"></td>
+        <td class="author-name">Albert Camus</td>
+        <td class="author-desc">In the depth of winter, I finally learned that within me there lay an invincible summer.</td>
+      </tr>
+      <tr>
+        <td class="author-img"><img src="https://miro.medium.com/max/1000/1*zu1D9-f2OPFY6xLECXnYUA.jpeg" height="150px" width="100px"></td>
+        <td class="author-name">Albert Einstein"</td>
+        <td class="author-desc">Look deep into nature, and then you will understand everything better.</td>
+      </tr>
+      <tr>
+        <td class="author-img"><img src="https://miro.medium.com/max/996/1*kCo9Z8-lI9adg04VJN8j9w.png" height="150px" width="100px"></td>
+        <td class="author-name">Alfred Hitchcock</td>
+        <td class="author-desc">Drama is life with the dull bits cut out.</td>
+      </tr>
+        
+    </tbody>
+    
+    
+
+  </table>
+
+</div>
+
+<div class="container-fluid">
+    <div id="footer" class="row footer">
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Policies </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Return Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Penalty</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Open Library </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Discover </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Author</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subjects</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Contact </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Email:lib@gmail.com</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Phone: 7276381542</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>
+

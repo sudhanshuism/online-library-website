@@ -1,0 +1,413 @@
+<html>
+  <head>
+    <!-- Included Stylesheets -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Javascript Libraries -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  <!--  <script src="https://use.fontawesome.com/6036af21bc.js"></script>-->
+
+  </head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/mitaoe.png">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./dashboard.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Browse
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./authors.html">Author</a>
+          <a class="dropdown-item" href="./dashboard.html#category">Category</a>
+
+          <a class="dropdown-item" href="./subjects.html">Subjects</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My Books
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./reading-log.html">My Reading Logs</a>
+          <a class="dropdown-item" href="./reading-list.html">My List</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Purchased Books</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html#footer">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:red" href="./" onclick="window.confirm('Are You Sure you want to Logout?')">Logout</a>
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+
+    </form>
+
+  </div>
+</nav>
+
+<div id="top" class="container-fluid library">
+    <div class="container library-middle">
+      <div class="library-category">
+        <div class="library-heading" id="category"><h4>Browse by Category</h4></div>
+        <div class="row category-row">
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/photo.png"></img>
+              <p><b><a href="./dashboard.html#fiction"> Fiction</a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+  
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/multimedia.png"></img>
+              <p><b><a href="./dashboard.html#science"> Science </a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+  
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/business.png"></img>
+              <p><b><a href="./dashboard.html#biography"> Biography </a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+  
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/marriage.png"></img>
+              <p><b><a href="./dashboard.html#romance"> Romance </a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+  
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/people.png"></img>
+              <p><b><a href="./dashboard.html#recipes"> Recipes </a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="container category-col">
+              <img class="icon" src="images/cabinet.png"></img>
+              <p><b><a href="./dashboard.html#fantasy"> Fantasy  </a></b></p>
+              <p class="no-of-books"><i>2000 Books</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="fiction" class="container book-rack">
+      <h4 style="color:#FF5733 ;">Recommended Books for you</h4>
+      <div class="row bg-1">
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/9272705-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/b/id/6976035-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/7319376-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/47422-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+  
+      </div>
+    </div>
+  
+    <div id="fiction" class="container book-rack">
+      <h4 >Fiction</h4>
+      <div class="row bg-1">
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/8267078-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+  
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/9272705-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/8431743-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/w/id/6908255-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="see-more">
+            <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+            <a href="#top" class="btn btn-danger">Top &#x2191; </a>        </div>
+      </div>
+    </div>
+  
+    <!-- Rack 2 -->
+    <div id="science" class="container book-rack">
+      <h4 >Science</h4>
+      <div class="row bg-2">
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/b/id/8236351-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/b/id/8236442-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/b/id/6976035-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="col-md-3 book">
+            <img src="https://covers.openlibrary.org/b/id/4898540-M.jpg" height="180px" width="120px">
+            <h5>Book Name </h5>
+            <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+          </div>
+          <div class="see-more">
+            <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+            <a href="#top" class="btn btn-danger">Top &#x2191; </a>      </div>
+      </div>
+    </div>
+  <!-- Rack 3 -->
+  <div id="biography" class="container book-rack">
+    <h4 >Biography</h4>
+    <div class="row bg-1">
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/9230254-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/8242347-M.jpg" height="180px" width="120px">
+          <h5>The Works of Washington Ervin </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/2560515-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/967072-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="see-more">
+          <a  class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+          <a href="#top" class="btn btn-danger">Top &#x2191; </a>    </div>
+    </div>
+  </div>
+  
+  <!-- Rack 4 -->
+  <div id="romance" class="container book-rack">
+    <h4 >Romance</h4>
+    <div class="row bg-2">
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/641422-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/1186324-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/7319376-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/w/id/47422-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="see-more"><a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+        <a href="#top" class="btn btn-danger">Top &#x2191; </a>    </div>
+    </div>
+  </div>
+  
+  <!-- Rack 5 -->
+  <div id="recipes" class="container book-rack">
+    <h4 >Recipes</h4>
+    <div class="row bg-1">
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/7916175-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/8118929-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/83179-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/6307701-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="see-more">
+          <a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+          <a href="#top" class="btn btn-danger">Top &#x2191; </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rack 6 -->
+  <div id="fantasy" class="container book-rack">
+    <h4 >Fantasy</h4>
+    <div class="row bg-2">
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/7129396-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/2328102-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/8597022-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="col-md-3 book">
+          <img src="https://covers.openlibrary.org/b/id/8235489-M.jpg" height="180px" width="120px">
+          <h5>Book Name </h5>
+          <a href="./single-book.html" class="btn btn-md btn-primary">Borrow</a>
+        </div>
+        <div class="see-more">
+          <a href="#" class="btn btn-warning" onclick="window.alert('No More book available in this category')"> See More &#10002;</a>
+          <a href="#top" class="btn btn-danger">Top &#x2191; </a>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="footer" class="row footer">
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Policies </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Return Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Penalty</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Open Library </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Discover </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Author</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subjects</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4 class="footer-heading"> Contact </h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Email:lib@gmail.com</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Phone: 7276381542</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>
